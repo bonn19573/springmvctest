@@ -29,4 +29,8 @@
 
     <!-- 自动扫描装配 -->
     <context:component-scan base-package="example.controller"/>
+
+    <mvc:interceptors>
+        <bean class="example.interceptor.TestInterceptor"/>
+    </mvc:interceptors>
 </beans>
